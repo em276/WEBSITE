@@ -3,9 +3,8 @@ body {
   height: 100%;
 }
 
-
-
 h1 {
+  margin: auto;
   text-align: center;
   animation: typing-text 2s steps(10), blink 0.5s infinite alternate;
   overflow: hidden;
@@ -31,53 +30,55 @@ h1 {
   }
 }
 
+.quiz-wrapper {
+  width: 80%;
+  margin: auto;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.question1 {
+  float: left;
+  background: lightblue;
+}
+
+.question2 {
+  float: right;
+  background: pink;
+}
+
+.question3 {
+  width: 50%;
+}
+
+.question4 {
+  width: 50%;
+}
+
 .nav {
   width: 100px;
-  
+
   height: 100px;
   margin-bottom: 100px;
 }
 ul {
-list-style: none;
-padding:0;
-margin:0;
-position:absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
 }
 li {
-  float:left;
-  margin-bottom:30px;
-
-
+  float: left;
+  margin-bottom: 30px;
 }
 a {
-width:150px;
-color:rgb(204, 17, 17);
-display:block;
-text-decoration:none;
-font-size:20px;
-text-align:left;
-padding:10px;
-font-family:Century Gothic;
-font-weight:bold;
+  width: 150px;
+  color: rgb(204, 17, 17);
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  font-family: Century Gothic;
+  font-weight: bold;
 }
-
-.button{
-text-align: center
-
-}
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
