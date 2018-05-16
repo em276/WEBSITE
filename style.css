@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  background-color: rgb(248, 222, 226);
 }
 
 h1 {
@@ -39,20 +40,24 @@ h1 {
 
 .question1 {
   float: left;
-  background: lightblue;
+  width: 50%;
 }
 
 .question2 {
   float: right;
-  background: pink;
+  width: 50%;
 }
 
 .question3 {
   width: 50%;
+  height: 50%;
+  float: left;
 }
 
 .question4 {
   width: 50%;
+  height: 50%;
+  float: right;
 }
 
 .nav {
@@ -77,7 +82,7 @@ a {
   display: block;
   text-decoration: none;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   padding: 10px;
   font-family: Century Gothic;
   font-weight: bold;

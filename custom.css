@@ -1,0 +1,92 @@
+.nav {
+  width: 100px;
+
+  height: 100px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+li {
+  float: left;
+  margin-bottom: 30px;
+}
+a {
+  width: 150px;
+  color: rgb(204, 17, 17);
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  font-family: Century Gothic;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f5f5;
+  font-family: sans-serif;
+}
+.container {
+  width: 1280px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #ff0;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.container .box .imgBox {
+  max-inline-size: 100%;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.container .box .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+  width: 300px;
+  height: 300px;
+}
+.container .box:hover .imBox img {
+  transform: scale(1.2);
+}
+.container .box .details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+.container .box:hover .details {
+  transform: scaleY(1);
+}
+.container .box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+.container .box .details .content,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}

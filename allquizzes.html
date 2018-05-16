@@ -4,28 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type=text/css href="style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="quizzes.js"></script>
+    <script source="questions.js"></script>
+
     <title>QUIZZES</title>
 </head>
 
 <body>
-    <div class="container_fluid">
+    <div class="container">
         <div class="nav">
             <ul>
                 <li>
                     <a class="navbuttons" href="index.html">HOME</a>
                 </li>
                 <li>
-                    <a class="navbuttons" href="allquizzes.html">QUIZZES</a>
+                    <a class="navbuttons" href="allquizzes.html">QUIZ</a>
                 </li>
                 <li>
-                    <a href="#">FEEDBACK</a>
+                    <a class="navbuttons" href="facts.html">FACTS</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a class="navbuttons" href="contact.html">CONTACT</a>
                 </li>
 
 
@@ -33,37 +38,75 @@
         </div>
 
 
-        <div class="quiz-wrapper">
-            <div class="question1">
-                Question One
-                <img src="language.jpg" alt="">
-                <br>
-                <button>This is a button</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="question1">
+                        <img src="nature.jpg" class="img-thumbnail">
+                        <br>
+                        <button id="q1" button type="button" class="btn btn-primary btn-lg">Take Quiz</button>
+                    </div>
+
+                    <div class="question2">
+                        <img src="scotland.jpg" class="img-thumbnail">
+                        <br>
+                        <button id="q2" button type="button" class="btn btn-primary btn-lg">SCOTLAND</button>
+
+
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="question3">
+                        <img src="england2.jpg" class="img-thumbnail">
+                        <br>
+                        <button id="q3" button type="button" class="btn btn-primary btn-lg">ENGLAND</button>
 
-            <div class="question2">
-                Question Two
-            </div>
 
-            <div class="question3">
 
-            </div>
-            <div class="question4">
+                    </div>
+                    <div class="question4">
+                        <img src="london.jpg" class="img-thumbnail">
+                        <br>
+                        <button id="q4" button type="button" class="btn btn-primary btn-lg">ENGLAND</button>
 
+
+                    </div>
+                </div>
             </div>
 
         </div>
 
+    </div>
+
+    <div id="dialog" title="Basic dialog" style="display:none">
+        <img src="uk flag.gif">
+        <div id="question" class="question"></div>
+        <div class="radio">
+            <p>In which year did Scotland become part of the United Kingdom?</p>
+            <label>
+                <input type="radio" name="optradio1" value="1825">1825</label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optradio1" value="1707">1707</label>
+        </div>
+        <div class="radio disabled">
+            <label>
+                <input type="radio" name="optradio1" value="1658">1658</label>
+        </div>
+
+        <button id="submit-answers" class="next-btn">Submit</button>
+    </div>
 
 
+
+    <div id="result" class="container result" style="display:none;">
     </div>
 
 
 
 </body>
-
-
-
-
 
 </html>
